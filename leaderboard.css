@@ -1,0 +1,158 @@
+body {
+    font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 50px 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #eceef1;
+    color: #2d72d9;
+    color: #333;
+    line-height: 1.5;
+}
+
+#outer {
+    width: 450px;
+    margin: 0 auto;
+}
+
+
+.location {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    display: block;
+    background-color: #fff;
+    //box-shadow: 0 2px 0 0 #ccc;
+    //border-radius: 3px;
+}
+
+    .location:hover {
+        color: #2d72d9;
+    }
+
+    .location:active {
+        position: relative;
+        left: 1px;
+    }
+
+    .location .name {
+        display: inline-block;
+        width: 300px;
+        padding: 10px 20px;
+    }
+
+    .location .score {
+        display: inline-block;
+        width: 50px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+.location.selected {
+    /*background-color: yellow;*/
+}
+
+.location.selected .score {
+    /*color: black;*/
+}
+
+.details, .none {
+    font-weight: bold;
+    border-color: #111;
+    border-width: 4px;
+    margin: 50px 10px;
+    padding: 10px 0px;
+}
+
+.none {
+    color: #777;
+}
+
+.inc {
+  cursor: pointer;
+}
+
+
+
+@-webkit-keyframes fade {
+  0% {
+      color: #2d72d9;
+      background: #dae8fe;
+  }
+
+  100% {
+      color: #333;
+      background: #fff;
+  }
+}
+
+@-moz-keyframes fade {
+  0% {
+      color: #2d72d9;
+      background: #dae8fe;
+  }
+
+  100% {
+      color: #333;
+      background: #fff;
+  }
+}
+
+@-ms-keyframes fade {
+  0% {
+      color: #2d72d9;
+      background: #dae8fe;
+  }
+
+  100% {
+      color: #333;
+      background: #fff;
+  }
+}
+
+@-o-keyframes fade {
+  0% {
+      color: #2d72d9;
+      background: #dae8fe;
+  }
+
+  100% {
+      color: #333;
+      background: #fff;
+  }
+}
+
+@keyframes fade {
+  0% {
+      color: #2d72d9;
+      background: #dae8fe;
+  }
+
+  100% {
+      color: #333;
+      background: #fff;
+  }
+}
+
+.selected {
+  -webkit-animation-name: fade;
+  -moz-animation-name: fade;
+  -ms-animation-name: fade;
+  -o-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 60s;
+  -moz-animation-duration: 60s;
+  -ms-animation-duration: 60s;
+  -o-animation-duration: 60s;
+  animation-duration: 60s;
+}
