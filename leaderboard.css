@@ -27,12 +27,12 @@ body {
 }
 
 header {
-    padding: 15px 0;
+    padding: 15px 20px;
     width: 100%;
     text-align: center;
     background: #5f90b0;
     margin-bottom: 40px;
-    padding
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
     overflow: auto;
 }
 
@@ -41,6 +41,20 @@ header {
       line-height: 1;
       color: #fff;
       font-family: 'gooddogregular', 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
+      float: left;
+      margin-top: 4px;
+   }
+
+   .current {
+        float: right;
+        color: #fff;
+        font-weight: bold;
+        padding: 7px 14px;
+        background: #fff;
+        border-radius: 3px;
+        color: #55bc75;
+        font-size: 14px;
+        line-height: 1;
    }
 
 #outer {

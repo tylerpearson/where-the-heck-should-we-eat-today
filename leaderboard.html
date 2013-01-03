@@ -6,6 +6,7 @@
 <body>
   <header>
       <h1>Where The Fuck Should NMC Eat Lunch Today?</h1>
+      {{> current }}
   </header>
 
   <div id="outer">
@@ -27,5 +28,9 @@
     <span class="name">{{name}}</span>
     <span class="score">{{score}}</span>
   </a>
+</template>
+
+<template name="current">
+    <p class="current">{{amount}} current viewer(s)</p>
 </template>
 

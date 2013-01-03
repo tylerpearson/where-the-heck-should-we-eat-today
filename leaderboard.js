@@ -37,6 +37,13 @@ if (Meteor.isClient) {
     }
   });
 
+  Template.current.amount = function() {
+    if(Visitors.find() != undefined) {
+        return Visitors.find().fetch().length;
+    }
+    return '0';
+  }
+
 
   /* to reset */
   konami = new Konami();
