@@ -49,14 +49,13 @@ if (Meteor.isClient) {
   konami = new Konami();
   konami.code = function() {
 
-    var answer = confirm("Bro, are you sure you really want to reset the counts?");
+    var answer = confirm("Woah there buddy, are you sure you really want to reset the counts?");
     if (answer) {
         Locations.find().forEach(function(place) {
             Locations.update(place._id, {$set: {score: 0}});
         });
         console.log("Boom, that shit is reset.");
     }
-
 
   }
   konami.load();
