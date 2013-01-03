@@ -61,7 +61,7 @@ if (Meteor.isServer) {
   Meteor.startup(function () {
     if (Locations.find().count() === 0) {
       var names = ["Tyler's",
-                   "Carrburitos",
+                   "Carburritos",
                    "Spotted Dog",
                    "Milltown",
                    "Southern Rail",
@@ -72,7 +72,7 @@ if (Meteor.isServer) {
                    "Venable",
                    "Jade Palace",
                    "Amante",
-                   "Carrboro Pizza Oven",
+                   "Carborro Pizza Oven",
                    "Gourmet Kingdom",
                    "Ba-Da Wings",
                    "Buns",
