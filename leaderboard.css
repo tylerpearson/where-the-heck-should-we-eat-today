@@ -37,32 +37,31 @@ header {
     overflow: auto;
 }
 
-   header h1 {
-      font-size: 24px;
-      line-height: 1;
-      color: #fff;
-      font-family: 'gooddogregular', 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
-      float: left;
-      margin-top: 4px;
-   }
+header h1 {
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    font-family: 'gooddogregular', 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
+    float: left;
+    margin-top: 4px;
+}
 
-   .current {
-        float: right;
-        color: #fff;
-        font-weight: bold;
-        padding: 7px 14px;
-        background: #fff;
-        border-radius: 3px;
-        color: #55bc75;
-        font-size: 14px;
-        line-height: 1;
-   }
+.current {
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 14px;
+    background: #fff;
+    border-radius: 3px;
+    color: #55bc75;
+    font-size: 14px;
+    line-height: 1;
+}
 
 #outer {
     width: 450px;
     margin: 0 auto;
 }
-
 
 .location {
     cursor: pointer;
@@ -76,62 +75,62 @@ header {
     overflow: auto;
 }
 
-    .location:hover {
-        color: #fff;
-        background: #55bc75;
-        -moz-transition: none;
-        -webkit-transition: none;
-        -o-transition: color 0 ease-in;
-        transition: none;
-    }
+.location:hover {
+    color: #fff;
+    background: #55bc75;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
 
-        .selected:hover {
-            color: #55bc75;
-        }
+.selected:hover {
+    color: #55bc75;
+}
 
-        .location:hover .score {
-            background: #fff!important;
-            color: #55bc75!important;
-            -webkit-transition: none!important;
-        }
+.location:hover .score {
+    background: #fff!important;
+    color: #55bc75!important;
+    -webkit-transition: none!important;
+}
 
-    .location:active {
-        position: relative;
-        left: 2px;
-        top: 2px;
-    }
+.location:active {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
 
-    .location .name {
-        display: inline-block;
-        width: 300px;
-        padding: 10px 20px;
-        float: left;
-    }
+.location .name {
+    display: inline-block;
+    width: 300px;
+    padding: 10px 20px;
+    float: left;
+}
 
-    .location .score {
-        display: inline-block;
-        vertical-align: middle;
-        text-align: center;
-        margin-top: 7px;
-        margin-right: 10px;
-        line-height: 18px;
-        font-size: 24px;
-        border-radius: 100%;
-        width: 16px;
-        height: 16px;
-        color: #fff;
-        background: #e76740;
-        padding: 10px;
-        text-align: center;
-        float: right;
-    }
+.location .score {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 10px;
+    line-height: 18px;
+    font-size: 24px;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    background: #e76740;
+    padding: 10px;
+    text-align: center;
+    float: right;
+}
 
 .location.selected {
-    /*background-color: yellow;*/
+    /*background-color: yellow;*/;
 }
 
 .location.selected .score {
-    /*color: black;*/
+    /*color: black;*/;
 }
 
 .details, .none {
@@ -147,75 +146,73 @@ header {
 }
 
 .inc {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-
-
 @-webkit-keyframes fade {
-  0% {
-      background: #cfffe6;
-  }
+    0% {
+        background: #cfffe6;
+    }
 
-  100% {
-      background: #fff;
-  }
+    100% {
+        background: #fff;
+    }
 }
 
 @-moz-keyframes fade {
-  0% {
-      background: #cfffe6;
-  }
+    0% {
+        background: #cfffe6;
+    }
 
-  100% {
-      background: #fff;
-  }
+    100% {
+        background: #fff;
+    }
 }
 
 @-ms-keyframes fade {
-  0% {
-      background: #cfffe6;
-  }
+    0% {
+        background: #cfffe6;
+    }
 
-  100% {
-      background: #fff;
-  }
+    100% {
+        background: #fff;
+    }
 }
 
 @-o-keyframes fade {
-  0% {
-      background: #cfffe6;
-  }
+    0% {
+        background: #cfffe6;
+    }
 
-  100% {
-      background: #fff;
-  }
+    100% {
+        background: #fff;
+    }
 }
 
 @keyframes fade {
-  0% {
-      background: #cfffe6;
-  }
+    0% {
+        background: #cfffe6;
+    }
 
-  100% {
-      background: #fff;
-  }
+    100% {
+        background: #fff;
+    }
 }
 
 .selected {
-  -webkit-animation-name: fade;
-  -moz-animation-name: fade;
-  -ms-animation-name: fade;
-  -o-animation-name: fade;
-  animation-name: fade;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 5s;
-  -moz-animation-duration: 5s;
-  -ms-animation-duration: 5s;
-  -o-animation-duration: 5s;
-  animation-duration: 5s;
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    -ms-animation-name: fade;
+    -o-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
 }

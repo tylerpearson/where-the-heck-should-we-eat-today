@@ -54,7 +54,7 @@ if (Meteor.isClient) {
         Locations.find().forEach(function(place) {
             Locations.update(place._id, {$set: {score: 0}});
         });
-        console.log("Boom, that shit is reset.");
+        console.log("Boom, that's reset.");
     }
 
   }
